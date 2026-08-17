@@ -58,8 +58,9 @@ class InternetCode_AdvancedProductFilter_Model_Rule_Condition_Product
             return null;
         }
 
-        if (isset($this->_customFiltersCache[$filterId])) {
-            return $this->_customFiltersCache[$filterId];
+        static $_customFiltersCache = [];
+        if (isset($_customFiltersCache[$filterId])) {
+            return $_customFiltersCache[$filterId];
         }
 
         /** @var InternetCode_AdvancedProductFilter_Model_Rule_Custom_Abstract $model */
@@ -67,7 +68,7 @@ class InternetCode_AdvancedProductFilter_Model_Rule_Condition_Product
         $model->setFilterOperator($this->getData('operator'))
             ->setFilterCondition($this->getData('value'));
 
-        $isReadyToCache && $this->_customFiltersCache[$filterId] = $model;
+        $isReadyToCache && $_customFiltersCache[$filterId] = $model;
         return $model;
     }
 
