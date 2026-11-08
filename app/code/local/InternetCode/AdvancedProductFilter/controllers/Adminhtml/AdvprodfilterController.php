@@ -137,7 +137,7 @@ class InternetCode_AdvancedProductFilter_Adminhtml_AdvprodfilterController exten
         return $category;
     }
 
-    protected function _isAllowed()
+    protected function _isAllowed(): bool
     {
         return true;
     }
