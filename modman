@@ -4,4 +4,4 @@ app/code/local/InternetCode/AdvancedProductFilter            app/code/local/Inte
 # app/etc
 app/etc/modules/InternetCode_AdvancedProductFilter.xml            app/etc/modules/InternetCode_AdvancedProductFilter.xml
 # app/design
-app/design/adminhtml/default/default/template/InternetCode/AdvancedProductFilter/js_after_grid.phtml            app/design/adminhtml/default/default/template/InternetCode/AdvancedProductFilter/js_after_grid.phtml
+app/design/adminhtml/base/default/template/InternetCode/AdvancedProductFilter/js_after_grid.phtml            app/design/adminhtml/base/default/template/InternetCode/AdvancedProductFilter/js_after_grid.phtml
